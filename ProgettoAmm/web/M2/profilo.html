@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Nerdbook, profilo, profilo utente, profile, aggiorna dati">
+        <meta name="author" content="Erica Manca">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <!-- Sezione di navigazione -->
+        <nav>
+            <a href="descrizione.html">Descrizione</a>
+            <a href="login.html">Log-in</a>
+        </nav>
+        
+        <!-- Sezione per inserimento dati -->
+        <div>
+            <h1>Inserisci i dati del tuo profilo</h1>
+            <div id="credenziali">
+                <form action="#" method="post">
+                    <!-- Dati dello user -->
+                    <div id="datianagrafici">
+                        <label for="name">Nome: </label>
+                        <input type="text" name="nome" id="name" value="Nome"/>
+                        <label for="surname">Cognome: </label>
+                        <input type="text" name="cognome" id="surname" value="Cognome"/>
+                    </div>
+                    <div id="immagine">
+                        <label for="propic">URL immagine del profilo: </label>
+                        <input type="url" name="immagineProfilo" id="propic" value="http://example.ex"/>
+                    </div>
+                    <div id="moreaboutyou">
+                        <label for="frase">Frase descrittiva: </label>
+                        <textarea rows="2" cols="30" name="frasedescrittiva" id="frase">Dicci qualcosa di te...</textarea>
+                        <label for="data">Data di nascita: </label>
+                        <input type="date" name="bday" id="data" min="1999-01-01"/>
+                    </div>
+                    
+                    <!-- Password -->
+                    <div id="sicurezza">
+                        <label for="pswd">Password: </label>
+                        <input type="password" name="password" id="pswd" value="Password"/>
+                        <label for="confirm">Conferma password: </label>
+                        <input type="password" name="conferma" id="confirm" value="Password"/>
+                    </div>
+                    <div>
+                        <button type="submit">Salva modifiche</button>
+                        <button type="reset">Annulla</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
