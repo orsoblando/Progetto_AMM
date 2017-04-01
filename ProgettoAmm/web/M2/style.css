@@ -1,0 +1,38 @@
+/*
+ * Stile per tutte le pagine  9ACADC per box
+ */
+
+body {
+    background-color: #82A4B1;
+    font-family: "Open Sans", sans-serif, segoe;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: bolder;
+    color: #476571;
+}
+
+h2, h3 {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #476571;
+}
+
+a:link {
+    color: #8CB7C7;
+    text-decoration: underline;
+}
+a:visited {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #476571;
+}
+
+a:hover {
+    font-style: italic;
+    text-decoration: blink;
+}
+p {
+    color: #5C7D8A;
+}
