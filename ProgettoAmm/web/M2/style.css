@@ -1,38 +1,76 @@
 /*
  * Stile per tutte le pagine  9ACADC per box
  */
-
 body {
-    background-color: #82A4B1;
+    background-color: #e3ecf9;
     font-family: "Open Sans", sans-serif, segoe;
 }
 
 h1 {
     font-size: 18pt;
     font-weight: bolder;
-    color: #476571;
+    color: #28374c;
 }
 
 h2, h3 {
     font-size: 15pt;
     font-weight: bold;
-    color: #476571;
+    color: #28374c;
 }
 
+/*
+ * Link
+ */
 a:link {
-    color: #8CB7C7;
-    text-decoration: underline;
+    color: #2a7ef7;
 }
 a:visited {
-    font-weight: bold;
     text-decoration: underline;
-    color: #476571;
+    color: #000e23;
 }
 
 a:hover {
-    font-style: italic;
-    text-decoration: blink;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2a7ef7;
 }
-p {
-    color: #5C7D8A;
+
+/*
+ * Testo
+ */
+p, ul {
+   color: #2c4a75;
+}
+
+
+/*
+ * Layout
+ */
+
+label::before, label::after {
+    content: '\A';
+    white-space: pre;
+}
+
+div {
+    border: 1px solid;
+    border-color: #8cbbff;
+    background-color: #e3ecf9;
+    
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div::after, div::before {
+    content: '\A';
+    white-space: pre;
+}
+
+div.linkinterni {
+    width: 350px;
 }
