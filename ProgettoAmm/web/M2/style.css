@@ -90,15 +90,9 @@ nav li img{
 
 nav ul#lastlog{
     float: right;
-    list-style-type: img;
-
 }
 
 nav li#lastlog{
-    border-right: none;
-    background-image: url(IMG/icona_user.png);
-    background-repeat: no-repeat;
-    background-position: 0.5px 0px;
 }
 
 nav li.active{
@@ -129,7 +123,7 @@ aside h2{
 }
 
 aside ul{
-    list-style-type: img;
+    list-style-type: none;
     margin-top: 3px;
 }
 aside li{
@@ -137,16 +131,18 @@ aside li{
     margin-left: -21px;
     margin-top: -2px;
     
-    background-repeat: no-repeat;
-    background-position: 0.5px 0px;
 }
 
 aside li::before{
-    content: url(IMG/icona_user.png);
 }
 
 aside li:first-child{
     margin-top: 0px;
+}
+
+aside li img.utente, nav li img.utente{
+    border-radius: 10px;
+    margin: 0;
 }
 
 
@@ -165,7 +161,20 @@ section {
     margin-top: -13px;
 }
 
+section div.utente, section div.content, section div h2, section div p {
+    border: 0;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
 
+section div.utente a{
+    text-decoration: none;
+}
+
+section div.utente img{
+    border-radius: 20px;
+}
 /*
  * Div
  */
