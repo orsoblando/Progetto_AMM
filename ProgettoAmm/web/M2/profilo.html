@@ -9,49 +9,88 @@
         <meta name="author" content="Erica Manca">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
-    <body>
+    <body id="profilo">
         <!-- Sezione di navigazione -->
         <nav>
-            <a href="descrizione.html">Descrizione</a>
-            <a href="login.html">Log-in</a>
+            <ul>
+                <li><a href="descrizione.html"><img title="NerdBook" alt="NerdBook" src="IMG/NerdbookLogo.png" height="30" width="117"></a></li>
+                <li><a href="bacheca.html">Bacheca</a></li>
+                <li class="active"><a href="profilo.html">Profilo</a></li>
+            </ul>
+            <ul id="lastlog">
+                <li id="lastlog">
+                    <a href="login.html">
+                        <img class="utente" title="User Image" alt="User Image" src="IMG/icona_user.png" height="20" width="20">
+                        Log-in
+                    </a>
+                </li>
+            </ul>
         </nav>
         
+        <!-- Sidebar -->
+        <aside>
+            <h2>Persone</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img class="utente" title="Aragorn" alt="Foto profilo di Aragorn" src="IMG/aragorn_propic.jpg" height="20" width="20">
+                        Aragorn
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="utente" title="Legolas" alt="Foto profilo di Legolas" src="IMG/legolas_propic.png" height="20" width="20">
+                        Legolas Greenleaf
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="utente" title="Arwen" alt="Foto profilo di Arwen" src="IMG/arwen_propic.png" height="20" width="20">
+                        Arwen Undómiel
+                    </a>
+                </li>
+            </ul>
+            <h2>Gruppi</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img class="utente" title="TFotR" alt="La Compagnia dell'Anello" src="IMG/one-ring-small.png" height="20" width="20">
+                        La compagnia dell'anello
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
         <!-- Sezione per inserimento dati -->
-        <div>
-            <h1>Inserisci i dati del tuo profilo</h1>
+        <section>
             <div id="credenziali">
+                <img title="Anteprima" alt="Anteprima" src="IMG/icona_user.png" height="120" width="120">
                 <form action="#" method="post">
                     <!-- Dati dello user -->
-                    <div id="datianagrafici">
-                        <label for="name">Nome: </label>
-                        <input type="text" name="nome" id="name" value="Nome"/>
-                        <label for="surname">Cognome: </label>
-                        <input type="text" name="cognome" id="surname" value="Cognome"/>
-                    </div>
-                    <div id="immagine">
-                        <label for="propic">URL immagine del profilo: </label>
-                        <input type="url" name="immagineProfilo" id="propic" value="http://example.ex"/>
-                    </div>
-                    <div id="moreaboutyou">
-                        <label for="frase">Frase descrittiva: </label>
-                        <textarea rows="2" cols="30" name="frasedescrittiva" id="frase">Dicci qualcosa di te...</textarea>
-                        <label for="data">Data di nascita: </label>
-                        <input type="date" name="bday" id="data" min="1999-01-01"/>
-                    </div>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="nome" id="name" value="Nome"/>
+                    <label for="surname">Cognome: </label>
+                    <input type="text" name="cognome" id="surname" value="Cognome"/>
+
+                    <label for="propic">URL immagine del profilo: </label>
+                    <input type="url" name="immagineProfilo" id="propic" value="http://example.ex"/>
+
+                    <label for="frase">Frase descrittiva: </label>
+                    <textarea rows="3" cols="30" name="frasedescrittiva" id="frase">Dicci qualcosa di te...</textarea>
+                    <label for="data">Data di nascita: </label>
+                    <input type="date" name="bday" id="data" min="1999-01-01"/>
                     
                     <!-- Password -->
-                    <div id="sicurezza">
-                        <label for="pswd">Password: </label>
-                        <input type="password" name="password" id="pswd" value="Password"/>
-                        <label for="confirm">Conferma password: </label>
-                        <input type="password" name="conferma" id="confirm" value="Password"/>
-                    </div>
-                    <div>
-                        <button type="submit">Salva modifiche</button>
-                        <button type="reset">Annulla</button>
-                    </div>
+                    <label for="pswd">Password: </label>
+                    <input type="password" name="password" id="pswd" value="Password"/>
+                    <label for="confirm">Conferma password: </label>
+                    <input type="password" name="conferma" id="confirm" value="Password"/>
+
+                    <button type="submit">Salva</button>
+                    <button type="reset">Annulla</button>
+                    
                 </form>
             </div>
-        </div>
+        </section>
     </body>
 </html>

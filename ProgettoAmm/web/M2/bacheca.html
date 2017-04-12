@@ -7,40 +7,112 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Nerdbook, bacheca, dashboard, homepage, history">
         <meta name="author" content="Erica Manca">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
-    <body>
+    <body id="bacheca">
         <!-- Sezione di navigazione -->
         <nav>
-            <a href="descrizione.html">Descrizione</a>
-            <a href="login.html">Log-in</a>
+            <ul>
+                <li><a href="descrizione.html"><img title="NerdBook" alt="NerdBook" src="IMG/NerdbookLogo.png" height="30" width="117"></a></li>
+                <li class="active"><a href="bacheca.html">Bacheca</a></li>
+                <li><a href="profilo.html">Profilo</a></li>
+            </ul>
+            <ul id="lastlog">
+                <li id="lastlog">
+                    <a href="login.html">
+                        <img class="utente" title="User Image" alt="User Image" src="IMG/icona_user.png" height="20" width="20">
+                        Log-in
+                    </a>
+                </li>
+            </ul>
         </nav>
         
+        <!-- Sidebar -->
+        <aside>
+            <h2>Persone</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img class="utente" title="Aragorn" alt="Foto profilo di Aragorn" src="IMG/aragorn_propic.jpg" height="20" width="20">
+                        Aragorn
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="utente" title="Legolas" alt="Foto profilo di Legolas" src="IMG/legolas_propic.png" height="20" width="20">
+                        Legolas Greenleaf
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="utente" title="Arwen" alt="Foto profilo di Arwen" src="IMG/arwen_propic.png" height="20" width="20">
+                        Arwen Undómiel
+                    </a>
+                </li>
+            </ul>
+            <h2>Gruppi</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img class="utente" title="TFotR" alt="La Compagnia dell'Anello" src="IMG/one-ring-small.png" height="20" width="20">
+                        La compagnia dell'anello
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
         <!-- Post -->
-        <div id="dashboard">
-            <h1>Bacheca</h1>
-            <!-- Post con descrizione -->
-            <div id="post1">
-                <h2>Aragorn</h2>
-                <img title="Aragorn" alt="Foto profilo di Aragorn" src="IMG/aragorn_propic.jpg" height="128" width="128">
-                <p>@Legolas, what do your elf eyes see?</p>
+        
+        <!-- Post con descrizione -->
+        <section>
+            <div id="post1" class="post">
+                <div class="utente">
+                    <h2>
+                        <a href="">
+                            <img class="utente" title="Aragorn" alt="Foto profilo di Aragorn" src="IMG/aragorn_propic.jpg" height="40" width="40">
+                            Aragorn
+                        </a>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>@Legolas, what do your elf eyes see?</p>
+                </div>
             </div>
             <!-- Post con immagine -->
-            <div id="post2">
-                <h2>Legolas Greenleaf</h2>
-                <img title="Legolas" alt="Foto profilo di Legolas" src="IMG/legolas_propic.png" height="128" width="128">
-                <p>
-                    They're taking the hobbits to- wtf
-                    <img title="Bilbo" alt="Bilbo?!" src="IMG/bilbo_middlefinger.gif">
-                </p>
+            <div id="post2" class="post">
+                 <div class="utente">
+                    <h2>
+                        <a href="">
+                            <img class="utente" title="Legolas" alt="Foto profilo di Legolas" src="IMG/legolas_propic.png" height="40" width="40">
+                            Legolas Greenleaf
+                        </a>
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        They're taking the hobbits to- wtf
+                        <img class="content" title="Bilbo" alt="Bilbo?!" src="IMG/bilbo_middlefinger.gif">
+                    </p>
+                </div>
+                
             </div>
             <!-- Post con immagine -->
-            <div id="post3">
-                <h2>Arwen Undómiel</h2>
-                <img title="Arwen" alt="Foto profilo di Arwen" src="IMG/arwen_propic.png" height="128" width="128">
-                <p>
-                    Watch <a href="IMG/legolas_o.jpg"> Legolas's face when he saw it...</a>
-                </p>
+            <div id="post3" class="post">
+                <div class="utente">
+                    <h2>
+                        <a href="">
+                            <img class="utente" title="Arwen" alt="Foto profilo di Arwen" src="IMG/arwen_propic.png" height="40" width="40">
+                            Arwen Undómiel
+                        </a>
+                    </h2>
+                </div>
+                
+                <div class="content">
+                    <p>
+                        Watch <a href="IMG/legolas_o.jpg"> Legolas's face when he saw it...</a>
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
     </body>
 </html>
