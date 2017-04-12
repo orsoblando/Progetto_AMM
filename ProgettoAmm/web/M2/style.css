@@ -93,6 +93,7 @@ nav ul#lastlog{
 }
 
 nav li#lastlog{
+    border-right: 0px solid #4b76bc;
 }
 
 nav li.active{
@@ -145,36 +146,6 @@ aside li img.utente, nav li img.utente{
     margin: 0;
 }
 
-
-/*
- * Section
- */
-section {
-    float: right;
-    width: 75%;
-    top: 10vh;
-    position: relative;
-    z-index: -1;
-}
-
-#bacheca section h2{
-    margin-top: -13px;
-}
-
-section div.utente, section div.content, section div h2, section div p {
-    border: 0;
-    margin: 0;
-    padding-top: 0px;
-    padding-bottom: 0;
-}
-
-section div.utente a{
-    text-decoration: none;
-}
-
-section div.utente img{
-    border-radius: 20px;
-}
 /*
  * Div
  */
@@ -216,3 +187,134 @@ div.linkinterni {
     #post1 {
         margin-top: -8px;
     }
+    
+ /*
+ * Section
+ */
+section {
+    float: right;
+    width: 75%;
+    top: 10vh;
+    position: relative;
+    z-index: -1;
+}
+
+#bacheca section h2{
+    margin-top: -13px;
+}
+
+section div.utente, section div.content, section div h2, section div p {
+    border: 0;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+section div.utente a{
+    text-decoration: none;
+}
+
+section div.utente img{
+    border-radius: 20px;
+}
+
+    #bacheca section .post .content img {
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+
+/*
+ * CSS SOLO PER IL LOGIN
+ */
+
+#login div{
+    margin: 0;
+}
+
+#login .outer, #login .middle {
+    border: none;
+    background-color: #334154;
+    z-index: -1;
+}
+
+#login .outer {
+    display: table;
+    position: absolute;
+    height: 98%;
+    width: 98%;
+}
+
+#login .middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#login .inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 50%;
+}
+
+#login h1 {
+    text-align: center;
+}
+
+#login form, #login form button{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+#login form button{
+    margin-top: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 40%;
+}
+
+#login .middle ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    
+    
+    font-size: 18pt;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+/*
+ * CSS PER PROFILO
+ */
+#profilo section div {
+    top: 10vh;
+    min-height: 87.9vh;
+    
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#profilo section{
+    top: 0;
+}
+
+/*
+ * IMMAGINI DECORATIVE
+ */
+
+/*
+ * La seguente immagine è stata considerata decorativa in quanto costituisce un semplice abbellimento della pagina di log-in
+ */
+#login .middle li {
+    background-image: url(IMG/icona_user2.png);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    
+    padding: 10px 0 10px 52px;
+    display: inline-block;
+}
