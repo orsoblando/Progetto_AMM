@@ -33,6 +33,7 @@ a:hover {
     font-weight: bold;
     text-decoration: underline;
     color: #2a7ef7;
+    cursor: pointer;
 }
 
 /*
@@ -46,6 +47,62 @@ p, ul {
 /*
  * Layout
  */
+
+label{
+    display: inline-block;
+}
+
+input {
+    width: 70%;
+    padding: 7px 10px;
+    margin: 1.5% 25%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+textarea{
+    height: 30%;
+    width: 70%;
+    padding: 7px 10px;
+    margin: 1.5% 25%;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    background-color: #c7c5db;
+    border: 1px solid #28374c;
+    border-radius: 6px;
+    color: #28374c;
+    padding: 13px 32px;
+    text-decoration: none;
+    margin: 1px 1px;
+    outline: none;
+    width: 33%;
+    cursor: pointer;
+}
+
+button:focus{
+    background-color: #f5f4ff;
+    color: #000e23;
+}
+
+button:hover{
+    background-color: #28374c;
+    color: whitesmoke;
+}
+
+input:focus{
+    border: 1px solid #12223a;
+}
+
+
+
 
 label::before, label::after {
     content: '\A';
@@ -76,9 +133,13 @@ nav ul, nav li, aside ul{
     display: inline-block;
 }
 
+nav ul{
+    padding-left: 32px;
+}
+
 nav li {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-right: 1px solid #4b76bc;
 }
 
@@ -90,6 +151,7 @@ nav li img{
 
 nav ul#lastlog{
     float: right;
+    padding-left: 0;
 }
 
 nav li#lastlog{
@@ -173,7 +235,6 @@ div::after, div::before {
 div.linkinterni {
     width: 350px;
 }
-
 
 /*
  * CSS SOLO PER LA BACHECA
@@ -269,10 +330,13 @@ section div.utente img{
 #login form button{
     margin-top: 8%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: auto;
-    width: 40%;
+    width: 100%;
+    
+    padding: 13px 27px;
+    
 }
 
 #login .middle ul{
@@ -284,6 +348,14 @@ section div.utente img{
     font-size: 18pt;
     font-weight: bolder;
     color: #ffffff;
+}
+
+#login form label{
+    padding: 0% 15%;
+}
+
+#login form input{
+    margin: 1.5% 15%;
 }
 
 /*
@@ -300,7 +372,30 @@ section div.utente img{
 }
 
 #profilo section{
-    top: 0;
+    top: 56px;
+}
+
+#profilo section img {
+    border-radius: 120px;
+    float: left;
+    margin-right: 1%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#profilo section label {
+    padding: 0% 25%;
+}
+#profilo form{
+    width: 65%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#profilo button {
+    width: 45%;
+    margin: 1px 0px;
+    padding: 13px 5px;
 }
 
 /*
@@ -317,4 +412,96 @@ section div.utente img{
     
     padding: 10px 0 10px 52px;
     display: inline-block;
+}
+
+
+@media only screen and (max-width: 480px){
+    
+    nav ul{
+        padding-left: 0;
+        display: inline-block;
+    }
+    
+    nav{
+        min-width: 94%;
+    }
+    
+    nav ul li:first-child{
+        display: block;
+        text-align: left;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        border-right: none;
+    }
+    
+    nav li img{
+        margin-top: -7px;
+        margin-left: 0;
+    }
+    
+    nav ul li{
+        border-right: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+    
+    nav ul#lastlog{
+        display: inline-block;
+        float: none;
+        padding-left: 0;
+    }
+    
+    aside{
+        display: none;
+    }
+    
+    section{
+        float: none;
+        width: 100%;
+        top: 16vh;
+    }
+    
+    #profilo section {
+        top: 75px;
+        width: 100%;
+    }
+    
+    #profilo section div{
+        min-height: 85.9vh;
+    }
+    
+    #profilo section form{
+        margin: auto;
+    }
+    #profilo section img{
+        float: none;
+        margin-left: 24%;
+    }
+    
+    #profilo section input, #profilo section textarea {
+        margin: 1.5% 0%;
+    }
+    
+    #profilo section label{
+        padding: 0;
+    }
+    
+    #login form button{
+        padding: 13px 13px;
+    }
+    
+    #login form input{
+        margin: 1.5% 0%;
+        width: 100%;
+    }
+    
+    #login form label{
+        padding: 0%;
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    
 }
