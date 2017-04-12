@@ -9,7 +9,7 @@ body {
 h1 {
     font-size: 18pt;
     font-weight: bolder;
-    color: #ffffff;
+    color: #28374c;
 }
 
 h2, h3 {
@@ -284,6 +284,16 @@ section div.utente img{
         margin: auto;
         width: 40%;
     }
+    
+    div.linkinterni{
+        width: 35%;
+        background-color: #e8f0ff;
+        margin: 0;
+    }
+    
+    div.info{
+        margin-top: 66px;
+    }
 
 /*
  * CSS SOLO PER IL LOGIN
@@ -398,21 +408,6 @@ section div.utente img{
     padding: 13px 5px;
 }
 
-/*
- * IMMAGINI DECORATIVE
- */
-
-/*
- * La seguente immagine è stata considerata decorativa in quanto costituisce un semplice abbellimento della pagina di log-in
- */
-#login .middle li {
-    background-image: url(IMG/icona_user2.png);
-    background-repeat: no-repeat;
-    background-position: 0px 5px;
-    
-    padding: 10px 0 10px 52px;
-    display: inline-block;
-}
 
 
 @media only screen and (max-width: 480px){
@@ -500,8 +495,33 @@ section div.utente img{
     #login form label{
         padding: 0%;
     }
+    
+    div.info {
+        margin-top: 70px;
+    }
+    div.linkinterni{
+        width: 85%;
+    }
 }
 
 @media only screen and (max-width: 1240px){
-    
+    /*va bene così*/
 }
+
+
+/*
+ * IMMAGINI DECORATIVE
+ */
+
+/*
+ * La seguente immagine è stata considerata decorativa in quanto costituisce un semplice abbellimento della pagina di log-in
+ */
+#login .middle li {
+    background-image: url(IMG/icona_user2.png);
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    
+    padding: 10px 0 10px 52px;
+    display: inline-block;
+}
+/*le altre sono parte integrante dell'html*/
