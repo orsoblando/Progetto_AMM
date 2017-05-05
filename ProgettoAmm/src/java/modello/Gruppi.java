@@ -91,6 +91,7 @@ public class Gruppi {
         return membri;
     }
 
+    
     /**
      * takes count of a new member of the group
      */
